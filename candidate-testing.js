@@ -52,13 +52,14 @@ if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
   }
   console.log (`${i+1} ${questions[i]}`)
   console.log (`Your Answer: ${candidateAnswers[i]}`)
-  console.log (`Correct Answer: ${correctAnswers[i]}`)
+  console.log (`Correct Answer: ${correctAnswers[i]}\n`)
   }
   
 if ((numberCorrect /candidateAnswers.length *100)>=80){
-  console.log  (`>>> Overall Grade: ${numberCorrect /candidateAnswers.length *100}% ( ${candidateAnswers.length} of ${correctAnswers.length} responses correct) <<<`)
+  console.log  (`>>> Overall Grade: ${numberCorrect /candidateAnswers.length *100}% (${numberCorrect} of ${correctAnswers.length} responses correct) <<<`)
 console.log(">>> Status: PASSED <<<")
   }else {
+    console.log  (`>>> Overall Grade: ${numberCorrect /candidateAnswers.length *100}% (${numberCorrect} of ${correctAnswers.length} responses correct) <<<`)
     console.log(">>> Status: FAILED <<<")
 }
 
@@ -78,7 +79,7 @@ function runProgram() {
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
-
+//Attempt 5
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
 module.exports = {
