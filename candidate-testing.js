@@ -54,8 +54,8 @@ if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
   console.log (`Your Answer: ${candidateAnswers[i]}`)
   console.log (`Correct Answer: ${correctAnswers[i]}\n`)
   }
-  
-if (Number(numberCorrect /candidateAnswers.length *100)>=80){
+  let score =(numberCorrect /candidateAnswers.length *100)
+if (score>=80){
   console.log  (`>>> Overall Grade: ${numberCorrect /candidateAnswers.length *100}% (${numberCorrect} of ${correctAnswers.length} responses correct) <<<`)
 console.log(">>> Status: PASSED <<<")
   }else {
