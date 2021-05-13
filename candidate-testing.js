@@ -46,18 +46,17 @@ for (let i=0; i < candidateAnswers.length; i++){
    //does expected answers = answers, but also case sensitive
 if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
   numberCorrect = numberCorrect +1
-  console.log (`${i+1} ${questions[i]}`)
-  console.log (`Your Answer: ${candidateAnswers[i]}`)
-  console.log (`Correct Answer: ${correctAnswers[i]}`)
-  console.log  (`>>> Overall Grade: ${numberCorrect /candidateAnswers.length *100}"% (" ${candidateAnswers.length} "of" ${correctAnswers.length}responses correct) <<<`)
-
     //console.log ("Great Job!")
   }else {
     //console.log("Try Again.")
   }
+  console.log (`${i+1} ${questions[i]}`)
+  console.log (`Your Answer: ${candidateAnswers[i]}`)
+  console.log (`Correct Answer: ${correctAnswers[i]}`)
   }
   
 if ((numberCorrect /candidateAnswers.length *100)>=80){
+  console.log  (`>>> Overall Grade: ${numberCorrect /candidateAnswers.length *100}% ( ${candidateAnswers.length} of ${correctAnswers.length} responses correct) <<<`)
 console.log(">>> Status: PASSED <<<")
   }else {
     console.log(">>> Status: FAILED <<<")
