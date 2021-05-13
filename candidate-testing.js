@@ -41,7 +41,7 @@ function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 let numberCorrect = 0
 //console.log(candidateAnswers)
-console.log (`Candidate Name:${candidateName}`)
+console.log (`Candidate Name: ${candidateName}`)
 for (let i=0; i < candidateAnswers.length; i++){
    //does expected answers = answers, but also case sensitive
 if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
