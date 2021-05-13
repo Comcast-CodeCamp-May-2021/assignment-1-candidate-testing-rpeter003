@@ -55,14 +55,14 @@ if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
   }else {
     //console.log("Try Again.")
   }
-  if ((numberCorrect /candidateAnswers.length *100)>=80){
+  }
+  
+if ((numberCorrect /candidateAnswers.length *100)>=80){
 console.log(">>> Status: PASSED <<<")
   }else {
     console.log(">>> Status: FAILED <<<")
-  }
-  
-
 }
+
 
 
   let grade;
