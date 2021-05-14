@@ -65,10 +65,10 @@ console.log(">>> Status: PASSED <<<")
 
 
 
-  let grade;
+  // let grade;
    
-   
-  return grade;
+  //comment 
+  return score;
 
 }
 
